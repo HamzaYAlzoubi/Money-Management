@@ -1,0 +1,143 @@
+/* Start Variables */
+:root{
+    --main-color: #2196f3 ;
+    --Paragraph-color:#777;
+    --main-transition: 0.3s;
+}
+/* End Variables */
+
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    
+}
+.container{
+    padding-left:15px; 
+    padding-right:15px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+  /* Mobail */
+@media (max-width: 767px)  {
+.container {
+    width: 100%;
+}
+}
+  /* Small */
+@media (min-width: 768px)  {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px)  {
+    .container {
+    width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+/* End Global Rules */
+
+
+/* Start Header */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header .container #logo{
+    color: green;
+}
+header .container ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container ul a{
+    margin-left: 20px;
+    font-size: 17px;
+}
+header .container ul a:hover{
+    color: rgb(1, 143, 1);
+}
+
+/* End Header */
+
+
+/* Start landing page */
+.landing .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 210px;
+}
+form label{
+    font-size: 30px;
+}
+form input{
+    width: 250px;
+    height: 35px;
+    padding-left: 20px;
+    outline: none;
+    border: 2px solid #eee;
+}
+
+.box_management{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box_management .box_money{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    border: solid 1px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.box_management .box_money .amount{
+    margin-top: 20px;
+    color: green;
+}
+
+/* End landing page */
